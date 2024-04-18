@@ -21,6 +21,8 @@ public class Tabuleiro {
         mostraTabuleiro(tamanho);
         posicionaPersonagem();
         adicionaJogador();
+        //Mostrar o tabuleiro após a dição dos novos player
+        mostraTabuleiro(Personagem);
     }
 
     public void mostraTabuleiro(int tamanho) {
@@ -35,12 +37,16 @@ public class Tabuleiro {
     }
 
     public void posicionaPersonagem() {
-        int posx = 0;
-        int posy = 0;
-        int posd;
 
         System.out.println("Digite a posição da linha: " + posy);
+        int posy = Scanner.posy;
+
         System.out.println("\nDigite a posição da coluna: " + posx);
+        int posx = Scanner.posx;
+
+        if (posx) {
+            
+        }
     }
 
     public void adicionaJogador() {
