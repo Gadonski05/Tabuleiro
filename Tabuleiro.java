@@ -30,6 +30,15 @@ public class Tabuleiro {
         for (int l = 0; l < tamanho; l++) {
             for (int c = 0; c < tamanho; c++) {
                 System.out.print("[ . ]");
+
+                boolean tevepersonagem = false;
+                
+                if (l == personagem.getPosy() && c == personagem.getPox()) {
+                    System.out.println("[" + personagem.getDes() + "]");
+                    
+                } if (!tevepersonagem) {
+                    System.out.println("[ . ]");
+                }
             }
             //Gera um espaçamento 
             System.out.println();
@@ -38,15 +47,13 @@ public class Tabuleiro {
 
     public void posicionaPersonagem() {
 
+        //Relação das posições com os personagens dentro do tabuleiro
         System.out.println("Digite a posição da linha: " + posy);
         int posy = Scanner.posy;
 
         System.out.println("\nDigite a posição da coluna: " + posx);
         int posx = Scanner.posx;
 
-        if (posx) {
-            
-        }
     }
 
     public void adicionaJogador() {
